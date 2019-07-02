@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerLayout">
+        <!--轮播图点的大小-->
+        <attr name="bannerPointSize" format="dimension" />
+        <!--轮播图点的位置，分别有左中右-->
+        <attr name="bannerPointGravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+        <!--轮播图点选中的图片-->
+        <attr name="bannerPointDrawableSelected" format="reference" />
+        <!--轮播图点未选中的图片-->
+        <attr name="bannerPointDrawableUnselected" format="reference" />
+        <!--轮播图循环时间，单位秒-->
+        <attr name="bannerDelaySecond" format="integer" />
+    </declare-styleable>
+
+</resources>

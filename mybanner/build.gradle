@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        applicationId "com.glory.mybanner"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+//通过这写来避免重复依赖
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-core-ui'
+//        exclude group: 'com.github.bumptech.glide' //意思是不加载本身设置的该包名的包
+    })
+//    implementation 'com.android.support:appcompat-v7:27.1.1'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    //打印log的
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //实例化json
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+}
