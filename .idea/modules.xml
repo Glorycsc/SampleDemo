@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SampleDemo.iml" filepath="$PROJECT_DIR$/SampleDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradle_demo/gradle_demo.iml" filepath="$PROJECT_DIR$/gradle_demo/gradle_demo.iml" />
+    </modules>
+  </component>
+</project>
